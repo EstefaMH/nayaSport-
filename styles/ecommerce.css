@@ -1,0 +1,30 @@
+.ecommerce-home-slider img{
+    width: 100%;
+}
+
+.section-accesories{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-clothes{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+@media screen and (width >=770px) {
+    .section-accesories{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section-clothes{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

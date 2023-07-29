@@ -1,0 +1,341 @@
+/*
+  FONTS: 
+  Faster One -> font-family: 'Faster One', cursive;
+  Squada One -> font-family: 'Squada One', cursive;
+  Source Code Pro -> font-family: 'Source Code Pro', monospace;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+:root {
+    --primary-color-title: #DF0539;
+    --secondary-color-text: #329FAE;
+    --text-color: #ffffff;
+    --text-color-price: #000000ce;
+    --monserrat-font: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-image: url(../assets/img/FONDO-HOME.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container-background {
+    background-image: url(../assets/img/BackgroundWhite.webp);
+    background-repeat: repeat-y;
+    min-height: 100vh;
+}
+
+.container-background-custom {
+    background-image: url(../assets/img/BackgroundCustom.svg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ------ HEADER  ----- */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #2b2b2b 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.navbar-nav a:hover {
+    color: aquamarine
+}
+
+
+/* ------ NAVBAR CUSTOM  ----- */
+.navbar-container-custom {
+    background: linear-gradient(180deg,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.089) 100%
+    );
+}
+
+/* ------ FOOTER  ----- */
+footer {
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top-menu {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.footer-top-menu ul {
+    font-weight: 500;
+    color: white;
+}
+
+.list-title {
+    list-style: none;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+}
+
+.footer-bottom-name {
+    color: aqua;
+    font-weight: 900;
+}
+
+.footer-bottom-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.footer-bottom-socialmedia a img {
+    width: 32px;
+}
+
+/* -----  BOTON WHATSAPP ------*/
+.whatsapp-icon-link {
+    position: fixed;
+    margin: 2%;
+    bottom: 0;
+    right: 0;
+    background-color: #3BD673;
+    padding: 1%;
+    border-radius: 100%;
+}
+
+.whatsapp-icon {
+    width: 100%;
+    color: aliceblue;
+}
+
+
+/* ------ BOTONES  ----- */
+.global-button {
+    background: transparent;
+    color: black;
+    font-size: 1.2em;
+    min-width: max-content;
+    width: 100px;
+    font-weight: 600;
+    border: none;
+    padding: 1.5%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.486);
+    margin: 1.5%;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.global-button:hover {
+    border-radius: 10px;
+    background: linear-gradient(320deg, #18b8c3ab, rgba(168, 168, 168, 0.308));
+    z-index: 3;
+}
+
+.global-button-custom {
+    color: white;
+    background-color: #18b8c3ab;
+}
+
+/* ------ ROUND CARDS  ----- */
+.round-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    margin: 2%;
+}
+
+.round-card-vector {
+    background-image: url(../assets/img/WhiteCircle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.round-card-description {
+    color: var(--secondary-color-text);
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.round-card-price {
+    font-family: 'Source Code Pro', monospace;
+    color: var(--text-color-price);
+    text-align: center;
+}
+
+/* ------ SQUARE CARDS  ----- */
+.square-card {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max-content;
+    width: 70%;
+    padding: 2% 0 2% 0;
+    margin: 1.5% 0 1.5% 0;
+    border-radius: 15px 15px 25px 25px;
+}
+
+.square-card-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    min-height: 250px;
+}
+
+.square-card img {
+    width: 70%;
+}
+
+.square-card-btn {
+    border-radius: 50%;
+    border: none;
+    padding: 1.5%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.349);
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.square-card-btn:hover {
+    background-color: var(--secondary-color-text);
+}
+
+
+/* ------ BLURCARD  ----- */
+.blur-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(205, 205, 205, 0.46);
+    /*  filter: blur(2.5px);
+    border: 1px solid #000;*/
+    border-radius: 20px;
+    z-index: -1;
+    margin: 2% 0 2% 0;
+    min-width: max-content;
+    width: 70%;
+}
+
+.blur-card img {
+    z-index: 3;
+}
+
+/* ------ SUBTITLE  ----- */
+.subtitle-section,
+.subtitle-section a {
+    color: var(--primary-color-title);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2.5%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2em;
+}
+
+@media screen and (width >=770px) {
+
+    /* ------ NAVBAR  ----- */
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar-nav {
+        min-width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    /* ------ FOOTER  ----- */
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-top-menu {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-around;
+    }
+
+    /* ------ SQUARE CARDS  ----- */
+    .square-card {
+        width: 20%;
+    }
+
+    .square-card-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+
+    .square-card img {
+        width: 70%;
+    }
+
+    /* ------ BLURCARD  ----- */
+    .blur-card {
+        width: 25%;
+    }
+
+    .blur-card img {
+        z-index: 3;
+    }
+
+}

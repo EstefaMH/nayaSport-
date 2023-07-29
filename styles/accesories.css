@@ -1,0 +1,36 @@
+
+.section-accesories{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesories-cards{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.accesories-title{
+    margin: 2% 0 2% 0;
+    color: var(--primary-color-title);
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (width >=770px) {
+
+    .section-accesories{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .accesories-cards{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+}

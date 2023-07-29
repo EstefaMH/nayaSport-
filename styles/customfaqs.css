@@ -1,0 +1,37 @@
+.custom-title{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.custom-faqs{
+    color: white;
+
+}
+
+.custom-faqs-container{
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    align-items: center;
+}
+
+dl{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dt{
+    font-weight: 800;
+    list-style: square;
+    margin-top: 3%;
+    color: var(--primary-color-title);
+    font-size: 1.6em ;
+}
+
+dd{
+    font-weight: 300;
+    text-indent: 1rem;
+    font-size: 1.2em ;
+}
