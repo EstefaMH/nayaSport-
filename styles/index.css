@@ -20,7 +20,7 @@
     --monserrat-font: 'Montserrat', sans-serif;
 }
 
-.container {
+.main-container {
     background-image: url(../assets/img/FONDO-HOME.jpeg);
     background-size: cover;
     min-height: 100vh;
