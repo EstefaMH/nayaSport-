@@ -1,0 +1,19 @@
+.subtitle-section {
+    color: $--primary-color-title;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2.5%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2em;
+  
+    a {
+      color: $--primary-color-title;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 2.5%;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 1.2em;
+    }
+}

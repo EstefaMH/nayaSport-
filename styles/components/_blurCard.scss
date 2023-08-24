@@ -1,0 +1,30 @@
+.blur-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(205, 205, 205, 0.46);
+  
+    /*  filter: blur(2.5px);
+    border: 1px solid #000;*/
+    border-radius: 20px;
+    z-index: -1;
+    margin: 2% 0 2% 0;
+    min-width: max-content;
+    width: 70%;
+  
+    img {
+      z-index: 3;
+    }
+}
+
+@media screen and (width >= 770px) {
+
+  .blur-card {
+    width: 25%;
+
+    img {
+      z-index: 3;
+    }
+  }
+  
+}

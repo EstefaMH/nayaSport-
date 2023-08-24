@@ -1,0 +1,28 @@
+.global-button {
+    background: transparent;
+    color: black;
+    font-size: 1.2em;
+    min-width: max-content;
+    width: 100px;
+    font-weight: 600;
+    border: none;
+    padding: 1.5%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.486);
+    margin: 1.5%;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  
+    &:hover {
+      border-radius: 10px;
+      background: linear-gradient(320deg,$--background-blue, rgba(168, 168, 168, 0.308));
+      z-index: 3;
+    }
+}
+  
+.global-button-custom {
+    color: $--text-color;
+    background-color: $--background-blue;
+}

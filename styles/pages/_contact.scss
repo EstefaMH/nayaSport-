@@ -1,0 +1,77 @@
+@use '../global/extend';
+
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form-container {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-bottom: 2%;
+}
+
+.subtitle-contact {
+	font-size: 1.5rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	input {
+		@extend .forms-properties;
+	}
+	textarea {
+		@extend .forms-properties;
+	}
+}
+.contact-form-button {
+	@extend .forms-properties;
+	background-color: $--background-blue;
+	border-radius: 5px;
+	font-weight: 800;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.contact-socialmedia-container {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact-socialmedia {
+	width: 95%;
+	display: flex;
+	align-items: center;
+	margin: 2% 0 2% 0;
+	a {
+		text-decoration: none;
+		font-weight: 800;
+		color: $--secondary-color-text;
+		margin-left: 2%;
+		font-size: 1em;
+	}
+}
+
+@media screen and (width >=1024px) {
+	.contact {
+		flex-direction: row;
+	}
+
+	.contact-socialmedia-container {
+		border-left: 3px solid $--primary-color-title;
+	}
+
+	.contact-socialmedia {
+		a {
+			font-size: 1.2em;
+		}
+	}
+}

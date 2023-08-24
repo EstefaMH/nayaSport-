@@ -1,0 +1,18 @@
+@import '../global/mixins';
+  
+.main-container {
+    @include container-bg('../assets/img/FONDO-HOME.jpeg');
+}
+  
+  
+.container-background-custom {
+    @include container-bg('../assets/img/BackgroundCustom.svg');
+}
+
+.container-background {
+    @include container-bg('../assets/img/BackgroundWhite.webp');
+    background-repeat: repeat-y;
+}
+
+
+  

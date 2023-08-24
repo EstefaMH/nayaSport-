@@ -1,0 +1,31 @@
+.custom-title {
+	font-family: $font-family-text;
+	color: $--text-color;
+	text-align: center;
+	font-size: 2em;
+}
+.custom-faqs {
+	color: $--text-color;
+}
+.custom-faqs-container {
+	display: flex;
+	justify-content: center;
+	min-height: 60vh;
+	align-items: center;
+}
+dl {
+	width: 80%;
+	background-color: $--background-black;
+}
+dt {
+	font-weight: 800;
+	list-style: square;
+	margin-top: 3%;
+	color: $--primary-color-title;
+	font-size: 1.6em;
+}
+dd {
+	font-weight: 300;
+	text-indent: 1rem;
+	font-size: 1.2em;
+}
