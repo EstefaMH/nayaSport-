@@ -39,6 +39,13 @@
   background-repeat: repeat-y;
 }
 
+.icon-color {
+  border-color: lightgreen;
+  background-color: #18B9C3;
+  color: #ffffff;
+  fill: #DF0539;
+}
+
 /* ------ HEADER  ----- */
 .navbar-container {
   display: flex;
@@ -411,6 +418,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 80%;
+}
+.contact-form input {
+  width: 100%;
 }
 .contact-form-button {
   background-color: #18B9C3;
@@ -431,6 +442,7 @@ footer {
 .contact-socialmedia {
   width: 95%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 2% 0 2% 0;
 }
@@ -440,6 +452,7 @@ footer {
   color: #329FAE;
   margin-left: 2%;
   font-size: 1em;
+  word-break: break-all;
 }
 
 @media screen and (width >= 1024px) {
@@ -448,6 +461,9 @@ footer {
   }
   .contact-socialmedia-container {
     border-left: 3px solid #DF0539;
+  }
+  .contact-socialmedia {
+    flex-direction: row;
   }
   .contact-socialmedia a {
     font-size: 1.2em;
