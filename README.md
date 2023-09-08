@@ -1,4 +1,4 @@
-﻿# nayaSport
+﻿# nayaSport 
 
 # Página Deportiva
 
@@ -34,9 +34,11 @@ Este es un sitio web de la tienda deportiva NayaSport se desarrolló utilizando 
 
    git checkout sass
 
+
+
    Si desea ver la version desarrollada con CSS
 
    git checkout dev
    
-4. Abre el archivo index.html en tu navegador preferido.
+5. Abre el archivo index.html en tu navegador preferido.
 
