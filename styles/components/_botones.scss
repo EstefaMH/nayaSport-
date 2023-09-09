@@ -1,5 +1,5 @@
 .global-button {
-    background: transparent;
+    background: linear-gradient(320deg,$--background-blue, rgba(168, 168, 168, 0.308));
     color: black;
     font-size: 1.2em;
     min-width: max-content;
@@ -17,7 +17,7 @@
   
     &:hover {
       border-radius: 10px;
-      background: linear-gradient(320deg,$--background-blue, rgba(168, 168, 168, 0.308));
+      background: $--background-blue;
       z-index: 3;
     }
 }

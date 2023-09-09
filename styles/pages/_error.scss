@@ -1,0 +1,17 @@
+.error-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      color: $--primary-color-title;
+      font-size: 3rem;
+    }
+  
+    a{
+      color: $--background-blue;
+      font-size: 2rem;
+    }
+}

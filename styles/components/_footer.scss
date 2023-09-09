@@ -45,11 +45,19 @@ footer {
 }
 
 .footer-bottom-socialmedia {
+	
 	a {
 		img {
 			width: 32px;
 		}
 	}
+}
+
+.footer-bottom-socialmedia-container{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2%;
 }
 
 

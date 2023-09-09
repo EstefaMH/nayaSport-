@@ -131,6 +131,13 @@ footer {
   width: 32px;
 }
 
+.footer-bottom-socialmedia-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+}
+
 @media screen and (width >= 770px) {
   .footer-top {
     flex-direction: row;
@@ -175,7 +182,7 @@ footer {
   }
 }
 .global-button {
-  background: transparent;
+  background: linear-gradient(320deg, #18B9C3, rgba(168, 168, 168, 0.308));
   color: black;
   font-size: 1.2em;
   min-width: -moz-max-content;
@@ -194,7 +201,7 @@ footer {
 }
 .global-button:hover {
   border-radius: 10px;
-  background: linear-gradient(320deg, #18B9C3, rgba(168, 168, 168, 0.308));
+  background: #18B9C3;
   z-index: 3;
 }
 
@@ -535,4 +542,20 @@ dd {
 }
 .uniforms-banner {
   width: 100%;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.error-container p {
+  color: #DF0539;
+  font-size: 3rem;
+}
+.error-container a {
+  color: #18B9C3;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
